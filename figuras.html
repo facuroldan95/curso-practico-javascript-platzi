@@ -1,15 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Figuras Geométricas | Curso práctico en Javascript</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous"
+    />
 </head>
+
 <body>
-    <h1>
-        Figuras Geométricas
-    </h1>
-    <script src="./figuras.js"></script>
+<div style="text-align: center;">
+    <header>
+        <h1>Figuras Geométricas</h1>
+        <p>Este es el primer taller del curso práctico de Javascript</p>
+    </header>
+</div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: auto">
+                    <img src="/images/cubo.jpg" alt=""/>
+                    <div class="card-body">
+                        <h5 class="card-title">Calcular Cuadrados</h5>
+                        <form action="">
+                            <label for="txtCuadrado"> 
+                                Escribe cuánto mide cada lado de tu cuadrado:</label>
+                                <input type="number" id="txtCuadrado"/>
+                                <br>
+                                <hr>
+                                <button type="button" class="btn btn-primary" id="txtAreaCuadrado" onclick="calcularAreaCuadrado()"> Calcular el área</button>
+                                <button type="button" class="btn btn-primary" id="txtPerimetroCuadrado" onclick="calcularPerimetroCuadrado()"> Calcular Perímetro</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: auto">
+                    <img src="/images/cubo.jpg" alt=""/>
+                    <div class="card-body">
+                        <h5 class="card-title">Calcular Triangulos</h5>
+                        <form action="">
+                            <label for="txtTrianguloA"> 
+                                Escribe cuánto mide cada lado de tu Triangulo:</label>
+                                <label for="txtTrianguloA">LADO A:</label>
+                                <input type="number" id="txtTrianguloA"/>
+                                <br>
+                                <label for="txtTrianguloB">LADO B: </label>
+                                <input type="number" id="txtTrianguloB"/>
+                                <br>
+                                <label for="txtTrianguloC"> BASE C:</label>
+                                <input type="number" id="txtTrianguloC"/>
+                                <br>
+                                <hr>
+                                <button type="button" class="btn btn-primary" id="txtAreaTriangulo" nclick="calcularAreaTriangulo()" > Calcular el área </button>
+                                <button type="button" class="btn btn-primary" id="txtPerimetroTriangulo" onclick="calcularPerimetroTriangulo()"> Calcular Perímetro </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: auto">
+                    <img src="/images/cubo.jpg" alt=""/>
+                    <div class="card-body">
+                        <h5 class="card-title">Calcular Circulo</h5>
+                        <form action="">
+                            <label for="txtCuadrado"> 
+                                Escribe cuánto mide el radio del circulo:</label>
+                                <input type="number" id="txtCirculo"/>
+                                <br>
+                                <hr>
+                                <button type="button" class="btn btn-primary" id="txtAreaCirculo" onclick="CalcularAreaCirculo()"> Calcular el área</button>
+                                <button type="button" class="btn btn-primary" id="txtPerimetroCirculo" onclick="CalcularPerimetroCirculo()"> Calcular Perímetro</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<script src="./figuras.js"></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"
+></script>
 </body>
 </html>
